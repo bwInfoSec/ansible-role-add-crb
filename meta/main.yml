@@ -15,8 +15,9 @@ galaxy_info:
 
   galaxy_tags:
     - rhel
-    - rhel_8
-    - codeready_builder
+    - rhel8
+    - codereadybuilder
+    - remote
 
   dependencies:
     - collection: community.general
