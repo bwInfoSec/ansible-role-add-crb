@@ -1,0 +1,4 @@
+---
+- name: Yum update cache
+  ansible.builtin.yum:
+    update_cache: true

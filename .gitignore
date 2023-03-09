@@ -1,0 +1,4 @@
+.venv
+.ssh
+ansible.cfg
+URZ_P_*-openrc.sh

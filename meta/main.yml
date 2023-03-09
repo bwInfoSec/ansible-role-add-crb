@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: Stefan Machmeier
+  description: "This role configures the CodeReady Linux Builder (CRB) repository on RHEL 8."
+  license: EUPL1.2
+  role_name: add_crb
+  namespace: bwinfosec
+
+  min_ansible_version: "2.8"
+
+  platforms:
+    - name: EL
+      versions:
+        - "8"
+
+  galaxy_tags:
+    - rhel
+    - rhel_8
+    - codeready_builder
+
+  dependencies:
+    - collection: community.general

@@ -1,0 +1,10 @@
+---
+- name: Import assert.yml
+  ansible.builtin.import_tasks: assert.yml
+  run_once: true
+
+- name: Enable RedHat codeready-builder repository
+  community.general.rhsm_repository:
+    name: codeready-builder-for-rhel-8-x86_64-rpms
+  notify:
+    - Yum update cache

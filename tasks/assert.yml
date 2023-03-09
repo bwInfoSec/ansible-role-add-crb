@@ -1,0 +1,7 @@
+---
+- name: Assert that distro is RedHat >= 8
+  ansible.builtin.assert:
+    that:
+      - ansible_distribution in [ "RedHat" ]
+      - ansible_distribution_major_version >= "8"
+    quiet: true
